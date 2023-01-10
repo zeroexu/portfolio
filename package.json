@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A simple portfolio in html",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx tailwindcss build css/main.css -o css/output.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeroexu/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeroexu/portfolio/issues"
+  },
+  "homepage": "https://github.com/zeroexu/portfolio#readme",
+  "dependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
