@@ -1,0 +1,251 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base { 
+  html{
+    color-scheme: dark light;
+  }
+  :root {
+    @apply bg-gray-100
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      @apply bg-zinc-800
+    }
+    .accent-title{
+      @apply text-yellow-500
+    }
+  }
+  header{
+    @apply
+    flex
+    flex-col
+    items-center
+    justify-center
+    h-screen
+    max-w-4xl
+    mx-auto
+  }
+
+  header > div#down {
+    @apply 
+    absolute 
+    bottom-0 
+    right-2/4 
+    text-6xl
+    rotate-90
+  }
+
+  header > div#down {
+   letter-spacing: -0.5em;
+  }
+
+  header>h1{
+    @apply
+    text-5xl
+  }
+
+  header>h2{
+    @apply
+    text-2xl
+  }
+
+  h3{
+    @apply
+    text-3xl
+    my-8
+  }
+
+  h4{
+    @apply
+    text-2xl
+    my-2
+  }
+
+  p{
+    @apply
+    my-2
+  }
+
+  main{
+    @apply
+    mx-auto
+    sm:max-w-4xl
+
+  }
+
+  main>section{
+    @apply
+    min-h-screen
+  }
+
+  main>section#me{
+    @apply
+    flex
+    flex-col
+    sm:grid
+    sm:grid-cols-2
+  }
+  main>section#me>article{
+    @apply
+    flex
+    flex-col
+    items-center
+    justify-center
+    p-8
+  }
+
+  main>section>img{
+    @apply
+    h-screen
+  }
+
+  main>section#skills{
+    @apply
+    flex
+    flex-col
+    items-center
+    justify-center
+    p-8
+  }
+
+  section#stack{
+    @apply flex 
+  }
+
+  section#stack>ul{
+    @apply
+    w-full
+    flex
+    flex-col
+    items-center
+    sm:grid 
+    gap-4 
+  }
+
+  .custom-grid-stacks{
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem),1fr));
+  }
+
+ section#stack>ul>li{
+    @apply flex ml-16 my-4
+  }
+
+  section#stack>ul>li>img{
+    @apply mr-4
+  }
+
+  main>section#portfolio{
+    @apply
+    flex
+    flex-col
+    p-8
+  }
+
+  .custom-grid{
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem),1fr));
+  }
+
+  main>section#portfolio>section.portfolio-cards{
+    @apply
+    flex
+    flex-col
+    items-center
+    sm:grid 
+    gap-4 
+  }
+
+
+  .card{
+    @apply
+    shadow
+    shadow-gray-500
+    p-2
+  }
+  .card>img{
+    @apply
+    w-full
+    bg-cover
+  }
+  .card>a{
+    @apply
+    block
+    w-fit
+    ml-auto
+  }
+
+  main>section#exp{ 
+    @apply 
+    h-full
+    p-8
+  }
+
+  main>section#exp>section>article{ 
+    @apply 
+    my-6
+    mx-8
+  }
+
+  main>section#exp>section>article>ul{ 
+    @apply 
+    my-6
+    mx-8
+  }
+
+  main>section#exp>section>article>h4{ 
+    @apply 
+    text-xl
+    font-bold
+  }
+
+  main>section#contact{ 
+    @apply 
+    h-full
+  }
+
+  footer{
+    @apply p-8
+  }
+
+  footer>h2{
+    @apply text-2xl
+  }
+
+  footer>ol{
+    @apply flex sm:justify-center w-full flex-wrap
+  }
+
+  footer>ol>li{
+    @apply px-16 py-8
+  }
+
+  nav{
+    @apply bg-yellow-500 
+    top-0
+    fixed
+    w-full
+
+  }
+
+  nav>ul{
+    @apply
+    flex
+    justify-around
+    pb-1
+  }
+
+  nav>ul>li{
+    @apply 
+    capitalize 
+    rounded-b
+    px-2 
+    py-2 
+    
+    hover:text-yellow-500
+    hover:bg-slate-900
+  }
+  
+}

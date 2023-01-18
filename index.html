@@ -1,13 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Sitio portfolio de Ali Lopez, aquí podrás encontrar un resumen de los trabajos y tecnologías que maneja Ali López este año">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ali Lopez Portfolio (@zeroexu)</title>
-    <link href=”.css/output.css” rel=”stylesheet”>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/output.css" >
 </head>
 <body>
-    
+    <nav>
+      <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#me">about</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#exp">exp</a></li>
+        <li><a href="#contact">contacto</a></li>
+      </ul>
+    </nav>
+    <header id="home">
+        <h1>Ali Lopez</h1>
+        <h2>Desarrollador Frontend</h2>
+        <div id="down">>></div>
+    </header>
+    <main>
+      <section id="me">
+        <article>
+          <h3 class="accent-title">Construyendo desde 2008</h3>
+          <p>Ayudar a volver realidad los proyectos de mis clientes y empleadores, llevar proyectos a producción que cumplieran las espectativas de las personas detrás de las ideas siempre fué una gran sastifacción para mí. Hoy con 14 años tengo otra misión, ayudar a otros desarrolladores a mejorar.</p>
+        </article>
+        <img src="assets/img/ali-480x800.png" alt="Foto de Ali Lopez" />
+      </section>
+      <section id="skills">
+        <article>
+          <h3 class="accent-title">Habilidades</h3>
+          <p>
+            Actualmente soy desarrollador Front, hago mentorías a desarrolladores de los equipos, los apoyo a desbloquear tareas y hago entrevistas
+          </p>
+          <p>
+           Acá te dejo el listado de tecnologías con las que estoy trabajando actualmente:
+          </p>
+          <section id="stack">
+            <ul class="custom-grid-stacks">
+              <li><img src="./assets/img/HTML.svg" width="32" height="32" alt="Icono de HTMl5"/>HTML</li>
+              <li><img src="./assets/img/CSS.svg" width="32" height="32" alt="Icono de CSS"/>CSS</li>
+              <li><img src="./assets/img/JavaScript.svg" width="32" height="32" alt="Icono de Javascript"/>Javascript</li>  
+              <li><img src="./assets/img/TypeScript.svg" width="32" height="32" alt="Icono de Typescript"/>Typescript</li>
+              <li><img src="./assets/img/Git.svg" width="32" height="32" alt="Icono de Git"/>Git</li>
+              <li><img src="./assets/img/React-Light.svg" width="32" height="32" alt="Icono de Reactjs"/>ReactJs</li>  
+              <li><img src="./assets/img/NextJS-Light.svg" width="32" height="32" alt="Icono de Nextjs"/>Nextjs</li>
+              <li><img src="./assets/img/TailwindCSS-Light.svg" width="32" height="32" alt="Icono de Tailwind"/>Tailwind</li>
+              <li><img src="./assets/img/NestJS-Light.svg" width="32" height="32" alt="Icono de Nestjs"/>Nestjs</li>
+              <li><img src="./assets/img/ExpressJS-Light.svg" width="32" height="32" alt="Icono de Express"/>Express</li>
+            </ul>
+          </section>
+        </article>
+      </section>
+      <section id="portfolio">
+        <h3 class="accent-title">Portfolio</h3>
+        <section class="portfolio-cards custom-grid ">
+          <article class="card">
+            <img src="assets/img/300x300.png" alt="Descripcion de la imagen" width="300" height="300">
+            <h4>Pokedex</h4>
+            <p>Una pokedex en nextjs13</p>
+            <a href="#">...Ver más</a>
+          </article>
+
+          
+        </section>
+      </section>
+      <section id="exp">
+        <h3 class="accent-title">Experiencia Profesional</h3>
+        <section>
+          <article>
+            <h4>Desarrollador Fullstack Accenture 12-2019 - Presente</h4>
+            <p>Desarrollo fullstack, Nextjs para Front y Nextjs para el BFF, ambos con typescript, 
+              las aplicaciones estaban bajo una arquitectura de microservicios y microfrontend</p>
+            <ul>
+              <li>Desarrollo de librerías propias</li>
+              <li>Desarrollo de endpoints</li>
+              <li>Desarrollo del Front</li>
+              <li>Integración de librería de terceros para validación biometrica facial</li>
+              <li>Implementación de microfrontend</li>
+              <li>Consumo de servicios con oath</li>
+              <li>Mentoría de desarrolladores</li>
+              <li>Entrevistas técnicas de Javascript, Reactjs y Node</li>
+              <li>Despliegue y soporte a aplicaciones en ambientes productivos</li>
+              <li>Documentación</li>
+            </ul>
+          </article>
+          <article>
+            <h4>Desarrollador Fullstack IMS 04-2018 - 11-2019</h4>
+            <p>Desarrollo de React y Node para dar soporte a sistemas de estadisticas sobre campañas publicitarias</p>
+            <ul>
+              <li>Desarrollo de endpoints</li>
+              <li>Desarrollo del Front</li>
+              <li>Despliegues en contenedores de Amazon</li>
+              <li>Consumo de servicios con jwt</li>
+              <li>Documentación</li>
+              <li>Planificación de tareas y sprints</li>
+            </ul>
+          </article>
+        </section>
+        <h3 class="accent-title">Otras experiencias</h3>
+        <label>Estas experiencias estan resumidas, para más detalle mirar el linkedin</label>
+        <section>
+          <article>
+            <h4>Desarrollador Fullstack Freelancer 2013 - 2018 - Presente</h4>
+            <p>Desarrollo de aplicaciones en PHP, Android, IOS, Unity</p>
+          </article>
+          <article>
+            <h4>Desarrollador Fullstack 2008 - 2013</h4>
+            <p>Desarrollador en PHP, HTML, Javascript</p>
+          </article>
+        </section>
+      </section>  
+      
+    </main>
+    <footer id="contact">
+      <h2 class="accent-title">Puedes contactarme por:</h2>
+      <ol>
+        <li>Mail:<a href="mailto:zero.exu@gmail.com">@zeroexu</a></li>
+        <li>Linkedin:<a href="https://ar.linkedin.com/in/zeroexu" target="_blank">@zeroexu</a></li>
+        <li>Phone:<a href="tel:+5491150177829">+54 911 501778 29</a></li>
+      </ol>
+    </footer>
 </body>
 </html>
