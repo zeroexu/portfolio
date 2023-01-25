@@ -18,6 +18,16 @@
     .accent-title{
       @apply text-yellow-500
     }
+    body{
+      background: radial-gradient(
+        circle at 33% 100%,
+        #0c0829 4%,
+        #100651,
+        #210a5e,
+        #0e031e,
+        #040c54
+      );
+    }
   }
   header{
     @apply
@@ -98,6 +108,10 @@
     p-8
   }
 
+  main>section#me>img{
+    @apply  object-cover h-auto
+  }
+
   main>section>img{
     @apply
     h-screen
@@ -119,23 +133,21 @@
   section#stack>ul{
     @apply
     w-full
-    flex
-    flex-col
-    items-center
-    sm:grid 
+    grid 
     gap-4 
+   
   }
 
   .custom-grid-stacks{
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem),1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 10rem),1fr));
   }
 
  section#stack>ul>li{
-    @apply flex ml-16 my-4
+    @apply flex my-4 mx-0
   }
 
   section#stack>ul>li>img{
-    @apply mr-4
+    @apply mr-4 
   }
 
   main>section#portfolio{
@@ -223,7 +235,7 @@
   }
 
   nav{
-    @apply bg-yellow-500 
+    @apply
     top-0
     fixed
     w-full
@@ -232,6 +244,8 @@
 
   nav>ul{
     @apply
+    bg-slate-900
+    text-white
     flex
     justify-around
     pb-1
@@ -243,9 +257,11 @@
     rounded-b
     px-2 
     py-2 
-    
-    hover:text-yellow-500
-    hover:bg-slate-900
+    transition-all
+    hover:bg-blue-800
+    hover:text-white
   }
+
+  
   
 }

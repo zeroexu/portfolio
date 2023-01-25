@@ -438,6 +438,17 @@ html{
     --tw-text-opacity: 1;
     color: rgb(234 179 8 / var(--tw-text-opacity));
   }
+
+  body{
+    background: radial-gradient(
+        circle at 33% 100%,
+        #0c0829 4%,
+        #100651,
+        #210a5e,
+        #0e031e,
+        #040c54
+      );
+  }
 }
 
 header {
@@ -526,6 +537,12 @@ main>section#me>article {
   padding: 2rem;
 }
 
+main>section#me>img {
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 main>section>img {
   height: 100vh;
 }
@@ -543,27 +560,20 @@ section#stack {
 }
 
 section#stack>ul {
-  display: flex;
+  display: grid;
   width: 100%;
-  flex-direction: column;
-  align-items: center;
   gap: 1rem;
 }
 
-@media (min-width: 640px) {
-  section#stack>ul {
-    display: grid;
-  }
-}
-
 .custom-grid-stacks{
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem),1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 10rem),1fr));
 }
 
 section#stack>ul>li {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-left: 4rem;
+  margin-left: 0px;
+  margin-right: 0px;
   display: flex;
 }
 
@@ -676,14 +686,16 @@ nav {
   position: fixed;
   top: 0px;
   width: 100%;
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
 nav>ul {
   display: flex;
   justify-content: space-around;
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
   padding-bottom: 0.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 nav>ul>li {
@@ -694,13 +706,16 @@ nav>ul>li {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   text-transform: capitalize;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 nav>ul>li:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgb(234 179 8 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 *, ::before, ::after {
