@@ -22,10 +22,10 @@
       background: radial-gradient(
         circle at 33% 100%,
         #0c0829 4%,
-        #100651,
-        #210a5e,
+        #0e0451,
+        #130b2a,
         #0e031e,
-        #040c54
+        #090f47
       );
     }
   }
@@ -62,6 +62,22 @@
     @apply
     text-2xl
   }
+
+
+  #down {
+    position: absolute;
+    animation: rebota 1s alternate infinite ease-out;
+  }
+  
+  @-webkit-keyframes rebota {
+    0% {
+      bottom: 0;
+    }
+    100% {
+      bottom: 20px;
+    }
+  }
+
 
   h3{
     @apply
@@ -139,15 +155,17 @@
   }
 
   .custom-grid-stacks{
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 10rem),1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 5rem),1fr));
   }
 
  section#stack>ul>li{
-    @apply flex my-4 mx-0
+    @apply flex flex-col items-center shadow 
+    shadow-gray-500
+    p-2
   }
 
   section#stack>ul>li>img{
-    @apply mr-4 
+    @apply mx-4 
   }
 
   main>section#portfolio{
